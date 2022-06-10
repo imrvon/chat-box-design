@@ -6,21 +6,22 @@
 
 body {
     background-color: #FC766AFF;
+    padding-top: 70px;
 }
 
 .container {
-    width: 500px;
-    min-width: 390px;
-    height: 600px;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
     background-color: #ffffff;
     padding: 25px;
-    margin: 50px auto;
     box-shadow: 0 3px #ccc;
 }
 
 .chatlogs {
     padding: 10px;
     width: 100%;
+    margin: 0 auto;
     height: 450px;
     background-color: #eee;
     overflow-x: hidden;
@@ -129,4 +130,48 @@ body {
 .chat-form button:hover {
     background-color: #5B84B1FF;
     box-shadow: 0 3px 0 rgb(71, 103, 138);
+}
+
+@media screen and (max-width:520px) {
+    .container {
+        padding: 15px;
+    }
+
+    .chat .user-photo {
+        width: 50px;
+        height: 50px;
+        background: #ccc;
+        border-radius: 50%;
+    }
+    
+    .chat .chat-message {
+        width: 80%;
+        padding: 15px;
+        margin: 5px 10px 0;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+@media screen and (max-width:409px) {
+    .container {
+        padding: 15px;
+    }
+
+    .chat .user-photo {
+        width: 40px;
+        height: 40px;
+        background: #ccc;
+        border-radius: 50%;
+    }
+    
+    .chat .chat-message {
+        width: 65%;
+        padding: 15px;
+        margin: 5px 10px 0;
+        color: #ffffff;
+        border-radius: 10px;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
 }
